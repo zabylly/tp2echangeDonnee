@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>API_HELP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/site.css" />
+</head>
+<body>
+    <h1>GET : Maths endpoint</h1>
+    <h1>List of possible query string</h1>
+    <div>api/maths?op=+&x=100&y=32 return {"op":"+","x":"100","y":"32","value":132}</div>
+    <div>api/maths?op=*&x=12&y=10 return {"op":"*","x":"12","y":"10","value":120}</div>
+    <div>api/maths?op=/&x=99&y=11.06 return {"op":"/","x":"99","y":"11.","value":8}</div>
+    <div>api/maths?op=%&x=100&y=13 return {"op":"%","x":"100","y":"13","value":9}</div>
+    <div>api/maths?op=!&n=10 return {"op":"!","n":"10","value":3628800}</div>
+    <div>api/maths?op=p&n=10 return {"op":"p","n":"10","value":true}</div>
+    <div>api/maths?op=pn&n=10 return {"op":"np","n":"10","value":29}</div>
+</body>
+<style>
+    div
+    {
+        margin: 1em;
+    }
+</style>
+</html>
